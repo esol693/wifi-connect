@@ -1,6 +1,11 @@
 # Wi-Fi Connect Development Changelog
 All notable development changes to this project will be documented in this file. Dates are displayed in UTC +8.
 
+### v23.8.3b
+> August 31, 2023
+- Initially stopped right click function for browsers.
+
+Credits main git: MinecraftJohn
 
 ### v23.8.3a
 > August 3, 2023
