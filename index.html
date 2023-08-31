@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#F1F3F9" />
-    <title>Wi-Fi Connect</title>
+    <title>Wi-Fi Connect </title>
     <link
       rel="shortcut icon"
       href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJKSURBVHgBTVNNaBNBFP7euhuNJWm7F3NIa/RQD0Wlemzw5yiC6EkQBBUPetFTj8WrFymC0pOignoVwastVdCLIFUwaCFJEQ8GmrUaqk13nm/e7GwTmMybt+9vvu8bQvYbmWuOFBg3ifkEGyMLDMNkd5ZdbLCu3A/rC21yZa5ZA3iBgb2STBIiH6EJYg8mO3/qbFtMC0jJBfmrafU82UgXct3Ey6kGarLubhKElTsrl8BUM6nRbtpVzOmxIs4fKss0jLfNDTz/kLix2U3jrxGAdtywyazVbSfGzHSMFxermBxNUd21gfvnKvTyyrjtzj4mwwaBSdMpHVudTGPlCDPHYjx7/x3H763gzMMfmH/dRn3/btT3Fcno1ZDjEXo0/X5qYkhZefW1DyqUdNz5dz1ebi1Tt0sgEwwAallgP46gL87hQqAF1vuh+P6RBW81AbXWQgHNeIwcuDJ1YAN8sqLNThflApFDfLsbTE4veTYCObClSyunTG8aHS1wsLJTJzNb4NOTJXyanaALR8ueAV1GQA2zkcgL53MnQLvzB9frMVbX+pT0tnD77B6MxxGWGl1hgrzAlEqKbzU4BzJTWDVK8PTqARyuxTpN++dvXHvwDUvtUBNVM46JjzQ6+4XtwaROWU4gUmhzk8tmHcNDkQAo/rCUKTBvJIG4HMJzyqxvgDk7BxH9QoykJ3Zk8XGPirN3IbHtv0+OPA5dxewKqkYz8Gj0bRDSDHnPBKNFAZ201ws9HUa5NTQorG3b6x+LErVYDOhu8mgqsQX+A0ac7Vv3NK4RAAAAAElFTkSuQmCC"
       type="image/x-icon"
     />
+	<!-- Insert bootstrap framework -->
+	<!--
+    <link rel="stylesheet" type="text/css" href="/bootstrap.min.css" />
+    -->
+	<!-- End of boostrap framework -->
     <script>
       const time = new Date();
       document
@@ -259,6 +264,77 @@
         margin-top: 32px;
         font-size: 16px;
       }
+	  .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
     </style>
   </head>
   <body class="relative">
@@ -347,6 +423,13 @@
       </form>
       <div id="button-area">
         <button id="button-facebook" class="hidden">Facebook</button><button id="button-login">Log in</button>
+		<br/>
+		<!--
+		<button class="btn btn-success rounded-pill px-3" type="button">
+    Test Button
+    <svg class="bi ms-1" width="20" height="20"><use xlink:href="#arrow-right-short"/></svg>
+  </button>
+		-->
       </div>
     </main>
     <section id="success-container" class="absolute hidden">
@@ -366,6 +449,11 @@
         </defs>
       </svg>
       <p>&nbsp;</p>
+	  <!-- BG music -->
+	  <!--
+      <audio controls autoplay>
+  <source src="#.mp3" type="audio/mpeg"></audio>
+		-->
     </section>
     <audio
       id="login-success-sound"
@@ -421,7 +509,7 @@
       };
 
       var errorHintMap = {
-        0: "OK ✅. ok na dong? Oo, ok na 👍.",
+        0: "Okay. Success!",
         "-1": "General error.",
         "-41500": "Invalid authentication type.",
         "-41501": "Failed to authenticate.",
