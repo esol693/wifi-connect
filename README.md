@@ -4,6 +4,7 @@
 </div>
 
 > Note: This project was tested on controller firmware v1.7.0 only. We will need to use base64 method to display images because using external is not [supported](https://www.tp-link.com/us/support/faq/3264/).
+> Update: This portal will and should work on a controller firmware v5+.
 
 ### What is this?
 
