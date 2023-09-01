@@ -11,7 +11,8 @@
       href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJKSURBVHgBTVNNaBNBFP7euhuNJWm7F3NIa/RQD0Wlemzw5yiC6EkQBBUPetFTj8WrFymC0pOignoVwastVdCLIFUwaCFJEQ8GmrUaqk13nm/e7GwTmMybt+9vvu8bQvYbmWuOFBg3ifkEGyMLDMNkd5ZdbLCu3A/rC21yZa5ZA3iBgb2STBIiH6EJYg8mO3/qbFtMC0jJBfmrafU82UgXct3Ey6kGarLubhKElTsrl8BUM6nRbtpVzOmxIs4fKss0jLfNDTz/kLix2U3jrxGAdtywyazVbSfGzHSMFxermBxNUd21gfvnKvTyyrjtzj4mwwaBSdMpHVudTGPlCDPHYjx7/x3H763gzMMfmH/dRn3/btT3Fcno1ZDjEXo0/X5qYkhZefW1DyqUdNz5dz1ebi1Tt0sgEwwAallgP46gL87hQqAF1vuh+P6RBW81AbXWQgHNeIwcuDJ1YAN8sqLNThflApFDfLsbTE4veTYCObClSyunTG8aHS1wsLJTJzNb4NOTJXyanaALR8ueAV1GQA2zkcgL53MnQLvzB9frMVbX+pT0tnD77B6MxxGWGl1hgrzAlEqKbzU4BzJTWDVK8PTqARyuxTpN++dvXHvwDUvtUBNVM46JjzQ6+4XtwaROWU4gUmhzk8tmHcNDkQAo/rCUKTBvJIG4HMJzyqxvgDk7BxH9QoykJ3Zk8XGPirN3IbHtv0+OPA5dxewKqkYz8Gj0bRDSDHnPBKNFAZ201ws9HUa5NTQorG3b6x+LErVYDOhu8mgqsQX+A0ac7Vv3NK4RAAAAAElFTkSuQmCC"
       type="image/x-icon"
     />
-	<script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script>
       const time = new Date();
       document
         .querySelector("html")
@@ -332,10 +333,85 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+	  
     </style>
+	
   </head>
   <body class="relative">
- 
+  
+  <!-- Modal Javacript -->
+  <script type="text/javascript">
+	// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+	</script>
+  
+  <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Terms & Pricing
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Crazy Cloud Networks</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <p>
+		<h5>Terms & Condition</h5>
+        Welcome to Crazy Cloud Networks Inc.! Please take time to read this quick and short terms and services.<br/>
+<br/>
+By accepting this agreement and accessing the wireless network, you acknowledge that you are of legal age, you have read and understood, and agree to be bound by this agreement.<br/>
+<br/>
+(*) The wireless network service is provided by the property owners and is completely at their discretion. Your access to the network may be blocked, suspended, or terminated at any time for any reason.<br/>
+(*) You agree not to use the wireless network for any purpose that is unlawful or otherwise prohibited and you are fully responsible for your use.<br/>
+(*) The wireless network is provided "as is" without warranties of any kind, either expressed or implied.<br/>
+(*) Wifi pricing may change without prior notice to all users and inclusions to our service/s may be changed at any time.<br/>
+(*) All users detected having a very large amount of data usage will be throttled and controlled for fair use.<br/>
+(*) Our movie streaming service is exclusive to users connected to our network only. No one can access it unless you are authorized and connected to Crazy Cloud Networks and any of its subsidiaries.<br/>
+<br/>
+We reserve the right to change the Service offered, the features of the Service offered, the terms of this Policy, or its system without notice to the user. <br/>
+<br/>
+<hr/>
+<h5>Subscription Pricing</h5>
+<hr/>
+By clicking the Agree button you acknowledge that you understand and agree to this Policy and Pricing.<br/>
+		</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" title="Make sure you read the terms before clicking this">Agree</button>
+        <!--<button type="button" class="btn btn-primary">Save changes</button>-->
+      </div>
+    </div>
+  </div>
+</div>
     <svg class="absolute logo" viewBox="0 0 599 135" xmlns="http://www.w3.org/2000/svg">
       <g clip-path="url(#clip0_225_2)">
         <path
@@ -819,5 +895,8 @@ document.onkeydown = function (e) {
      }
 };
 </script>
-</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
