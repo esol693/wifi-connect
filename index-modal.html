@@ -333,12 +333,44 @@
       .bd-mode-toggle {
         z-index: 1500;
       }
+	  
     </style>
+	
   </head>
   <body class="relative">
+  
+  <!-- Modal Javacript -->
+  <script type="text/javascript">
+	// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+	</script>
+  
   <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-  Terms & Condition
+  Terms & Pricing
 </button>
 
 <!-- Modal -->
@@ -346,29 +378,35 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Agreement</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">Crazy Cloud Networks</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
 	  <p>
+		<h5>Terms & Condition</h5>
         Welcome to Crazy Cloud Networks Inc.! Please take time to read this quick and short terms and services.<br/>
 <br/>
 By accepting this agreement and accessing the wireless network, you acknowledge that you are of legal age, you have read and understood, and agree to be bound by this agreement.<br/>
+<br/>
 (*) The wireless network service is provided by the property owners and is completely at their discretion. Your access to the network may be blocked, suspended, or terminated at any time for any reason.<br/>
 (*) You agree not to use the wireless network for any purpose that is unlawful or otherwise prohibited and you are fully responsible for your use.<br/>
 (*) The wireless network is provided "as is" without warranties of any kind, either expressed or implied.<br/>
 (*) Wifi pricing may change without prior notice to all users and inclusions to our service/s may be changed at any time.<br/>
 (*) All users detected having a very large amount of data usage will be throttled and controlled for fair use.<br/>
 (*) Our movie streaming service is exclusive to users connected to our network only. No one can access it unless you are authorized and connected to Crazy Cloud Networks and any of its subsidiaries.<br/>
+<br/>
 We reserve the right to change the Service offered, the features of the Service offered, the terms of this Policy, or its system without notice to the user. <br/>
 <br/>
-By clicking the Login button after you put your voucher code, you acknowledge that you understand and agree to this Policy.<br/>
+<hr/>
+<h5>Subscription Pricing</h5>
+<hr/>
+By clicking the Agree button you acknowledge that you understand and agree to this Policy and Pricing.<br/>
 		</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Agree</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal" title="Make sure you read the terms before clicking this">Agree</button>
         <!--<button type="button" class="btn btn-primary">Save changes</button>-->
       </div>
     </div>
