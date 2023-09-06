@@ -22,7 +22,7 @@ Wi-Fi Connect is my customized [Omada Controller](https://omada.tplinkcloud.com/
 
 ### How to use
 
-1. Download the [index.html](https://github.com/MinecraftJohn/wifi-connect/blob/main/index.html) file.
+1. Download the [index.html]([https://github.com/MinecraftJohn/wifi-connect/blob/main/index.html](https://github.com/esol693/wifi-connect/blob/main/index.html)) file.
 2. Go to your `Settings` > `Authentication` > `Portal Customization`
 3. In the type: section, check the `Import Customized Page` checkbox.
 4. Import the downloaded `index.html` and click Apply button to apply your changes.
