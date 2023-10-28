@@ -1,6 +1,12 @@
 # Wi-Fi Connect Changelog
 All notable changes to this project will be documented in this file. Dates are displayed in UTC +8.
 
+### v1.3.0 rev2.2
+>October 29, 2023
+- Optimized voucher codes portal authentication
+- Optimized no-authentication portal
+- Removed unused core.js to speed up loading times.
+- Preparing for background music during initial portal load.
 
 ### v1.2.0
 > August 3, 2023
